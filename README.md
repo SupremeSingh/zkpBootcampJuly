@@ -12,6 +12,12 @@ After the invocation, the Python script will iterate over the exercises, Cairo p
 
 This form of the tutorial has been inspired by [rustlings](https://github.com/rust-lang/rustlings) repo (used for learning rust) and likewise to communicate to the script to proceed to the next exercise tag `## I am not done` at the top of the file has to be removed.
 
+# Quick Start
+
+```
+gitpod.io/#github.com/SupremeSingh/zkpBootcampJuly/
+```
+
 # Set-up
 
 Precursors necessary are:
