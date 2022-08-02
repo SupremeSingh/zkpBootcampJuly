@@ -2,19 +2,16 @@
 from exercises.cairo.ex1 import log_value
 
 @external
-func test_log_value{syscall_ptr : felt*, range_check_ptr}():
-
-    ## value to pass
-    let p = 42
-
-    %{         
-        print(f"passing value: {ids.p}")        
-    %}    
-
-
-    log_value(p)
-    
-    return ()
+func log_value{output_ptr : felt*}(y : felt):      
+   
+   ## Start a hint segment that uses python print() 
+   serialize_word(y)
+   
+   %{
+    print("This one is from python {}".format(ids.y))
+   %}
+   
+   ## This exercise has no tests to check against.
+   return ()   
 end
-
 

@@ -7,4 +7,3 @@ func test_simple_math{syscall_ptr : felt*, range_check_ptr}():
     return ()
 end
 
-
